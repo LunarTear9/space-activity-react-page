@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 function Totalstats() {
   // State example
-  const [count, setCount] = useState(0);
+ 
 
   // Effect example
   useEffect(() => {
