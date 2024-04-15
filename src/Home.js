@@ -10,10 +10,7 @@ function Totalstats() {
     document.title = `You clicked ${count} times`;
   }, [count]);
 
-  // Event handler example
-  const handleClick = () => {
-    setCount(count + 1);
-  };
+
 
   return (
     <div>
