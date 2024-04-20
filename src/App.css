@@ -1,7 +1,6 @@
 .App {
   text-align: center;
- 
-  justify-items:center;
+  justify-items: center;
   height: 100%;
   width: 100%;
 }
@@ -44,48 +43,46 @@
 .Container4 {
   overflow-y: auto;
   box-shadow: 5px 5px 10px 1px #000000;
-  min-width: 70vw;
+  min-width: 80vw;
   max-height: 80vh;
-
-border-radius:60px;
-display: grid;
-background-color: rgba(160, 117, 89, 0.774);
-justify-content: center;
-justify-items:center;
-
-scrollbar-width: thin; /* thin, auto, or none - for Firefox */
-scrollbar-color: #888 #cc6433; /* thumb color, track color - for Firefox */
+  border-radius: 60px;
+  display: grid;
+  background-color: rgba(160, 117, 89, 0.774);
+  justify-content: center;
+  justify-items: center;
+  scrollbar-width: thin; /* thin, auto, or none - for Firefox */
+  scrollbar-color: #888 #cc6433; /* thumb color, track color - for Firefox */
 }
 
 .Container4::-webkit-scrollbar {
-width: 12px; /* width of the scrollbar */
+  width: 12px; /* width of the scrollbar */
 }
 
 .Container4::-webkit-scrollbar-track {
-background: #f1f1f1; /* color of the track */
+  background: #f1f1f1; /* color of the track */
 }
 
 .Container4::-webkit-scrollbar-thumb {
-background: #888; /* color of the thumb */
+  background: #888; /* color of the thumb */
 }
 
 .Container4::-webkit-scrollbar-thumb:hover {
-background: #555; /* color of the thumb on hover */
+  background: #555; /* color of the thumb on hover */
 }
 
 .content {
-
-align-items: center;
-  justify-items:center;
+  align-items: center;
+  justify-items: center;
 }
 
 .MainContainer {
   min-height: 90vh;
   min-width: 70vw;
-border-radius: 60;
-align-items: center;
+  border-radius: 60;
+  align-items: center;
   justify-items: center;
 }
+
 .background {
   background-size: cover;
   background-position: center;
@@ -95,54 +92,92 @@ align-items: center;
   align-items: center;
 }
 
-.Row{
+.Row {
   justify-items: start;
-min-width:70vw;
-  display:flex;
+  min-width: 70vw;
+  display: flex;
   min-height: 2vh;
-  
-  
 }
 
-
-.divier {
-  
-  color:rgb(148, 96, 0);
+.divider {
+  color: rgb(148, 96, 0);
   border-color: rgb(160, 104, 0);
   background-color: rgb(160, 104, 0);
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    height:2px;
-    border-width: 1px;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  height: 2px;
+  border-width: 1px;
   width: 60vw;
 }
 
 .mini-container {
   align-items: center;
   justify-items: center;
+  margin-right: 12px;
   margin-left: 40px;
   box-shadow: 5px 5px 10px 1px #000000;
   min-height: 10vh;
   min-width: 16vw;
   border-radius: 40px;
   transition: transform 0.3s; /* Add transition for smooth effect */
+  max-height: 26vh;
+  max-width: 26vw;
 }
 
 .mini-container:hover {
   transform: scale(1.1); /* Enlarge the container on hover */
 }
 
-
 .Grid {
-  display:grid;
-min-height: 20vh;
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the width as needed */
+  display: grid;
+  min-height: 20vh;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the width as needed */
   gap: 20px;
-
-
 }
 
+.Grid2 {
+  justify-content: center;
+  justify-items: center;
+  display: grid;
+  min-height: 20vh;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the width as needed */
+  gap: 20px;
+}
+
+.Row h1 {
+  margin: 0; /* Adjust margin to remove extra spacing */
+}
+
+/* Empty container style */
+.mini-container.empty {
+  visibility: hidden;
+  width: 16vw;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  
+  background-color: #cc6433;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
