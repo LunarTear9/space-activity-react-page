@@ -97,7 +97,7 @@ class App extends React.Component {
                         <div key={index} className='mini-container empty'>
                           <h3>&nbsp;</h3>
                           <p><strong>Event Time:</strong> </p>
-                          <p><a href="javascript:void(0)" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'black' }}>&nbsp;</a></p>
+                          <p><a href="#" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'black' }}>&nbsp;</a></p>
                         </div>
                       ))
                     }
