@@ -42,10 +42,7 @@ class App extends React.Component {
     if (isLoading) {
       return (
         <div className="loading-container">
-          <div className="Grid2">
-          <img src={iconLogo} alt="Icon" className="icon" style={{ width: '165px', height: '160px',marginBottom: 120 }} />
           <div className="loader"></div>
-          </div>
         </div>
       ); // Loading spinner
     }
@@ -68,7 +65,7 @@ class App extends React.Component {
             <div className='MainContainer'>
               <div className='Container4'>
                 <div className='Row'>
-                <img src={iconLogo} alt="Icon" className="icon" style={{ width: '65px', height: '60px', marginTop: 30, marginLeft: 60 }} />
+                  <img src={iconLogo} alt="Icon" className="icon" style={{ width: '65px', height: '60px', marginTop: 30, marginLeft: 60 }} />
                   <h1 style={{ marginLeft: 40, marginTop: 35 }}>Live Space Data Project</h1>
                 </div>
                 {/* Display solar flare data */}
@@ -100,7 +97,7 @@ class App extends React.Component {
                         <div key={index} className='mini-container empty'>
                           <h3>&nbsp;</h3>
                           <p><strong>Event Time:</strong> </p>
-                          <p><a href="#" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'black' }}>&nbsp;</a></p>
+                          <p><a href="javascript:void(0)" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'black' }}>&nbsp;</a></p>
                         </div>
                       ))
                     }
